@@ -1,12 +1,16 @@
+
+import { Outlet } from "react-router-dom";
+
 import "./App.css";
 
 function App() {
   return (
-  <div>
-    <p>Coucou</p>
-    <p>Coucou toi</p>
-  </div>
-);
+
+    <div>
+      <Outlet />
+    </div>
+  );
+
 }
 
 export default App;
