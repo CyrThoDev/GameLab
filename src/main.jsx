@@ -4,6 +4,7 @@ import * as React from "react";
 import Home from "./pages/Home";
 import GamePage from "./pages/GamePage";
 import App from "./App";
+import Ressources from "./pages/Ressources";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/ressources",
-        element: <p>Ressources</p>,
+        element: <Ressources/>,
       },
       {
         path: "game/:id",
