@@ -1,10 +1,12 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
-import reactLogo from "./assets/react.svg";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  return <div>Coucou</div>;
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 }
 
 export default App;
