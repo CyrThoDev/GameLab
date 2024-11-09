@@ -1,0 +1,50 @@
+#heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+
+  hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: clamp(300px, 40%, 500px);
+    max-width: 640px;
+    gap: 5rem;
+
+    h1 {
+      font-size: var(--heading1);
+      color: var(--darkFirstColor);
+    }
+
+    p {
+      font-weight: bold;
+      font-size: var(--regularText);
+      width: 110%;
+    }
+  }
+
+  figure {
+    display: flex;
+    min-width: 200px;
+    max-width: 500px;
+    width: 40vw;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    background: linear-gradient(
+      145deg,
+      rgba(240, 247, 255, 1) 0%,
+      rgba(199, 228, 250, 1) 97%
+    );
+    border-radius: 50%;
+
+    img {
+      width: 110%;
+    }
+
+    @media (width <= 700px) {
+      display: none;
+    }
+  }
+}
