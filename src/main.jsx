@@ -9,7 +9,7 @@ import Ressources from "./pages/Ressources";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
     children: [
       {
         path: "/",
@@ -17,15 +17,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/ressources",
-        element: <Ressources/>,
+        element: <Ressources />,
       },
       {
         path: "game/:id",
         element: <GamePage />,
-      }
-    ]
+      },
+    ],
   },
-
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
