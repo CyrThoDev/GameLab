@@ -2,15 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
 
   hgroup {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: clamp(300px, 40%, 500px);
-    max-width: 640px;
+    width: clamp(350px, 40%, 500px);
     gap: 5rem;
 
     h1 {
@@ -21,7 +19,10 @@
     p {
       font-weight: bold;
       font-size: var(--regularText);
-      width: 110%;
+    }
+
+    @media (width <= 700px) {
+      gap: 3rem;
     }
   }
 
@@ -29,7 +30,7 @@
     display: flex;
     min-width: 200px;
     max-width: 500px;
-    width: 40vw;
+    width: 30vw;
     aspect-ratio: 1;
     margin: 0 auto;
     background: linear-gradient(

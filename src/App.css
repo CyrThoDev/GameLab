@@ -14,7 +14,7 @@
 
   --white: #fdf8f8;
 
-  --dropShadow: drop-shadow(4px 4px 4px #00000040);
+  --dropShadow: drop-shadow(3px 2px 1px #00000040);
   --boxShadow: 0px 4px 4px 0px #00000040;
 
   --heading1: clamp(2rem, 4vw, 4rem);
@@ -32,9 +32,29 @@ body {
   );
   padding: 2rem 3rem;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("./assets/Jspatterns.png");
+    background-size: 15%;
+    background-repeat: repeat;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
   @media (width <= 500px) {
     padding: 2rem 1rem;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 
 a {
